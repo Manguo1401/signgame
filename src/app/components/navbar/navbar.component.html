@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="">ABS</a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" [class.show]="navbarOpen" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active" >
+        <a class="nav-link" routerLink="/library">BIBLIOTHEQUE</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" >
+        <a class="nav-link" routerLink="/games">JEUX</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" >
+        <a class="nav-link" routerLink="/about">A PROPOS</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" >
+        <a class="nav-link" routerLink="/contact">NOUS CONTACTER</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" >
+        <a class="nav-link" routerLink="/donation">FAIRE UN DON</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav" >
+      <li class="nav-item" routerLinkActive="active" >
+          <a class="nav-link" routerLink="/my-account">
+            <fa-icon [icon]="['far', 'user-circle']"></fa-icon>
+          </a>
+      </li>
+    </ul>
+  </div>
+</nav>
